@@ -7,7 +7,7 @@
 
 import {_decorator, Component, Node, Label, Vec2} from 'cc';
 import * as cc from "cc";
-import {Me} from "../scripts/me";
+import {MySprite} from "../scripts/MySprite";
 
 const {ccclass, property} = _decorator;
 
@@ -21,7 +21,7 @@ export class Label2 extends Component {
     // serializableDummy = 0;
     private label: any = null
 
-    @property({type: Me})
+    @property({type: MySprite})
     private player = null;
 
     worldPos: Vec2 = new Vec2(0, 0);

@@ -7,7 +7,6 @@
 
 import {_decorator, Component, Node, Label, Graphics} from 'cc';
 import * as cc from 'cc';
-import {Me} from "../scripts/me";
 
 const {ccclass, property} = _decorator;
 
@@ -21,14 +20,7 @@ export class MyGraphic extends Component {
     }
 
     start() {
-        this.graph.lineWidth = 10;
-        this.graph.fillColor.fromHEX('#ff0000');
-        this.graph.moveTo(-40, 0);
-        this.graph.lineTo(40, 0);
-        this.graph.lineTo(0, 80);
-        this.graph.close();
-        this.graph.stroke();
-        this.graph.fill();
+
     }
 
     // update (deltaTime: number) {
